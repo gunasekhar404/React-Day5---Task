@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+    crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.13.0/Sortable.min.js" 
+    integrity="sha512-5x7t0fTAVo9dpfbp3WtE2N6bfipUwk7siViWncdDoSz2KwOqVC1N9fDxEOzk0vTThOua/mglfF8NO7uVDLRC8Q==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <main>
+        <h3 class="text-center p-3">Todo List</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 col-sm-12 text-center">
+                    <form id="task-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="additem" placeholder="Enter the task">
+                            <input type="submit" value="Add" id="add" class="btn btn-success btn-block mt-4">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 col-sm-12 hide mt-5" id="filterlist">
+                    <!-- <h3 class="text-center">Filter</h3> -->
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control align-middle" id="filterTask" placeholder="Search">
+                        </div>
+                        <ul class="list-group sortlist mylist">
+                       
+                        </ul>
+                        <a href="#" class="clear-tasks btn btn-primary text-center mt-4">Clear Tasks</a>
+                    </form>
+                    
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="reorder_feature.js"></script>
+    
+</body>
+</html>
