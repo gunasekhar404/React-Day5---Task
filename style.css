@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap');
+input[type="text"]{
+    border: none;
+    border-bottom: 1px solid green;
+    border-radius: 100px;
+}
+input[type="text"]:focus{
+    box-shadow: none;
+    outline: none;
+    border-bottom: 1px solid green;
+}
+h3{
+    font-size: 4rem;
+}
+.hide{
+    display:none;
+}
+.mylist li{
+    padding: 12px;
+    height : 50px;
+    color: black;
+}
+li:hover { color: #f2bc94;
+    background-color: #663636; }
+
+body { 
+    font-family: 'Nova Cut', cursive;
+    background-color: #95edf3;
+    color:rgb(11, 59, 131);
+    
+}
+/* color:rgb(66, 124, 212); */
